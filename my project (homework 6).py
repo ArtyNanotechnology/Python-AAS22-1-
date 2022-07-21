@@ -17,7 +17,7 @@ async def handler(message: Message):
 
 @bot.on.message(text="Cтарт")
 async def handler(message: Message):
-    s = Keyboard(one_time=True)
+    s = Keyboard()
     s.add(Text("Пушкин"), color=KeyboardButtonColor.NEGATIVE)
     s.add(Text("Тютчев"),color=KeyboardButtonColor.PRIMARY)
     s.row()
